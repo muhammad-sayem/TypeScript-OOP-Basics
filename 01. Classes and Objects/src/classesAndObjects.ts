@@ -38,3 +38,26 @@ const person1 = new Person();
 person1.name = "Sayem";
 person1.age = 24;
 console.log(person1);
+
+// -------------------------------------- //
+
+// Default parameter and optional parameter //
+class Student {
+  // id: number;
+  // name: string;
+  // age: number;
+
+  constructor(public id: number, public name: string, public age?: number){
+    this.id = id;
+    this.name = name;
+    if(typeof age !== "undefined"){
+      this.age = age
+    }
+    else{
+      delete this.age;
+    }
+  }
+}
+
+const student1 = new Student(100001, "Maruf");
+console.log("Student ------> ", student1);
