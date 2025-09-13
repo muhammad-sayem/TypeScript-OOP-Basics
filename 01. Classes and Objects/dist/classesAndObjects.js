@@ -55,6 +55,6 @@ class Student {
         }
     }
 }
-const student1 = new Student(100001, "Maruf");
+const student1 = new Student(100001, "Maruf", 43);
 console.log("Student ------> ", student1);
 //# sourceMappingURL=classesAndObjects.js.map
